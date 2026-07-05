@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Python Mastery – Learn Python programming from scratch with interactive lessons, code examples, and a built-in Python editor that runs in your browser.">
+  <title>Python Mastery – Learn Python from Scratch</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Prism.js – Syntax Highlighting (Light theme) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+
+  <!-- CodeMirror 5 (simpler CDN setup than CM6) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.18/lib/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.18/theme/default.css">
+</head>
+<body>
+
+  <!-- ===== TOP NAVIGATION ===== -->
+  <header class="top-nav" id="topNav">
+    <div class="nav-left">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle sidebar">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="logo">
+        <span class="logo-icon">&#128013;</span> Python <strong>Mastery</strong>
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="#lesson/introduction" class="nav-link">Home</a>
+      <a href="https://docs.python.org/3/" target="_blank" rel="noopener" class="nav-link">Reference</a>
+      <a href="https://www.python.org/" target="_blank" rel="noopener" class="nav-link">Python.org</a>
+    </nav>
+  </header>
+
+  <!-- ===== SIDEBAR OVERLAY (mobile) ===== -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ===== LEFT SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">Python Tutorial</div>
+    <nav class="sidebar-nav" id="sidebarNav">
+      <a href="#lesson/introduction" class="sidebar-link" data-lesson="introduction">
+        <span class="lesson-num">1</span> Introduction to Python
+      </a>
+      <a href="#lesson/working-with-python" class="sidebar-link" data-lesson="working-with-python">
+        <span class="lesson-num">2</span> Working with Python
+      </a>
+      <a href="#lesson/keywords" class="sidebar-link" data-lesson="keywords">
+        <span class="lesson-num">3</span> Python Keywords
+      </a>
+      <a href="#lesson/examples" class="sidebar-link" data-lesson="examples">
+        <span class="lesson-num">4</span> Loop Examples
+      </a>
+      <a href="#lesson/identifiers" class="sidebar-link" data-lesson="identifiers">
+        <span class="lesson-num">5</span> Identifiers
+      </a>
+      <a href="#lesson/comments" class="sidebar-link" data-lesson="comments">
+        <span class="lesson-num">6</span> Comments
+      </a>
+      <a href="#lesson/variables" class="sidebar-link" data-lesson="variables">
+        <span class="lesson-num">7</span> Variables
+      </a>
+      <a href="#lesson/data-types" class="sidebar-link" data-lesson="data-types">
+        <span class="lesson-num">8</span> Data Types
+      </a>
+      <a href="#lesson/operators" class="sidebar-link" data-lesson="operators">
+        <span class="lesson-num">9</span> Operators
+      </a>
+      <a href="#lesson/expressions" class="sidebar-link" data-lesson="expressions">
+        <span class="lesson-num">10</span> Expressions
+      </a>
+      <a href="#lesson/statements" class="sidebar-link" data-lesson="statements">
+        <span class="lesson-num">11</span> Statements
+      </a>
+      <a href="#lesson/input-output" class="sidebar-link" data-lesson="input-output">
+        <span class="lesson-num">12</span> Input and Output
+      </a>
+      <a href="#lesson/type-conversion" class="sidebar-link" data-lesson="type-conversion">
+        <span class="lesson-num">13</span> Type Conversion
+      </a>
+      <a href="#lesson/debugging" class="sidebar-link" data-lesson="debugging">
+        <span class="lesson-num">14</span> Debugging
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ===== MAIN CONTENT AREA ===== -->
+  <main class="main-content" id="mainContent">
+    <article class="content-body" id="content">
+      <!-- Markdown-rendered lesson content is injected here -->
+      <div class="loading-placeholder">
+        <div class="spinner"></div>
+        <p>Loading lesson...</p>
+      </div>
+    </article>
+
+    <!-- Previous / Next Navigation -->
+    <nav class="lesson-nav" id="lessonNav">
+      <a href="#" class="lesson-nav-btn prev-btn" id="prevBtn">&#8592; Previous</a>
+      <a href="#" class="lesson-nav-btn next-btn" id="nextBtn">Next &#8594;</a>
+    </nav>
+  </main>
+
+  <!-- ===== SCRIPTS ===== -->
+  <!-- Marked.js – Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.0/marked.min.js"></script>
+
+  <!-- Prism.js – Syntax highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+
+  <!-- CodeMirror 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.18/lib/codemirror.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.18/mode/python/python.min.js"></script>
+
+  <!-- App scripts -->
+  <script src="js/editor.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
