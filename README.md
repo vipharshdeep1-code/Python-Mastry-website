@@ -4,7 +4,7 @@
 
 ## 🌐 Live Site
 
-Visit the live website: [Python Mastery](https://vipharshdeep1-code.github.io/python-mastery/)
+Visit the live website: [Python Mastery]https://vipharshdeep1-code.github.io/Python-Mastry-website/#lesson/introduction
 
 ## ✨ Features
 
